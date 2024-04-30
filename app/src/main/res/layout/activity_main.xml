@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/note_collante"
+            android:layout_marginTop="30dp"
+            android:id="@+id/imageLogo"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Notes"
+            android:fontFamily="@font/poppins"
+            android:textSize="32sp"
+            android:textColor="#538296"
+            android:id="@+id/textLogo"
+            android:layout_toRightOf="@+id/imageLogo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:hint="search note..."
+        android:layout_below="@+id/textLogo"
+        android:id="@+id/searcheditText"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:background="@drawable/shapeedit"
+        android:layout_marginTop="35dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noteRecycleView"
+        android:layout_below="@+id/searcheditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/baseline_add_24"
+        app:tint="@color/white"
+        android:id="@+id/addBtn"
+        android:backgroundTint="#538296"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textSize="28sp"
+        android:textColor="#538296"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textviewUpdate"
+        android:fontFamily="@font/poppins"
+        android:text="Edit Note" />
+
+    <ImageButton
+        android:id="@+id/updatesavebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="211dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/textviewUpdate"
+        android:background="#00FFFFFF"
+        android:src="@drawable/done_icon" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textviewUpdate"
+        android:background="@drawable/blackborder"
+        android:layout_marginTop="30dp"
+        android:hint="Enter the title"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:id="@+id/updateTitleEditTxt"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="510dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/updateTitleEditTxt"
+        android:background="@drawable/blackborder"
+        android:layout_marginTop="15dp"
+        android:hint="Enter the description"
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/updateContentEditTxt"/>
+
+
+
+</RelativeLayout>
